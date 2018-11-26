@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+@import url('https://fonts.googleapis.com/css?family=Niramit');
+
+body{
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, rgba(255,0,0,0), rgba(255,0,0,.5));
+}
+
+.main-container {
+  text-align: center;
+  width: 100%;
+  margin:0 auto;
+  position: relative;
+  padding-top: 5%;
+}
+
+.section-1, .section-3 {
+  font-family: 'Niramit', sans-serif;
+}
+
+.display, #message {
+  font-family: 'Asap', sans-serif;
+}
+
+/*Setting duration to the color changer and making the loop continuous*/
+#current-word {
+  animation-name: clrChanger;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.Howto {
+  border-style: dotted;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#answer-input {
+  font-family: "Montserrat", Helvetica, sans-serif;
+   position: relative;
+   box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.5);
+   padding: 14px 12px;
+   text-align: center;
+   color: black;
+   font-weight: bold;
+   font-size: 14pt;
+   transition: background-color 0.1s linear;
+   letter-spacing: 0.7px;
+
+   border: none;
+   animation: fade 0.6s ease-in-out 1.2s forwards;
+   cursor: pointer;
+   border-radius: 25px;
+}
+
+.section-4 {
+  padding-bottom: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+ .main-container {
+   width: 800px;
+ }
+}
+/*Colors change when the percentage goes up*/
+@keyframes clrChanger {
+    0% {color:red;}
+    10%  {color:purple;}
+    20%  {color:pink;}
+    30%  {color:#800000;}
+    40%  {color:orange;}
+    50%  {color:blue;}
+    60%  {color:green;}
+    70%  {color:#7FFFD4;}
+    80%  {color:#808000;}
+    90%  {color:#008080;}
+    100% {color:red;}
+}

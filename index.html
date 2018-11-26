@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Speed Typity - Home</title>
+</head>
+<body>
+  <div class="main-container">
+    <!--Displaying the title and Howto-->
+    <div class="section-1">
+      <h1 id="title">Speed Typity</h1>
+      <div class="Howto">
+        <p>Type in your answer within 4 seconds!</p>
+        <p>If the game is over, type the shown word to play again!</p>
+      </div>
+    </div>
+    <!--Displaying the current word and the input field!-->
+    <div class="section-2">
+      <h2 class="display" id="current-word">Oops something went wrong :(</h2>
+      <input type="text" class="form" placeholder="Start typing..." id="answer-input" autofocus>
+    </div>
+    <!--Holds the timer and score-->
+    <div class="section-3">
+      <div class="timer">
+        <h3>Time Left:
+          <span id="time">0</span>
+        </h3>
+      </div>
+      <div class="score">
+        <h3>Score:
+          <span id="score">0</span>
+        </h3>
+      </div>
+    </div>
+    <!--Displaying the message such as "Correct" & "GameOver!!!"-->
+    <div class="section-4">
+        <h1 id="message"></h1>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
